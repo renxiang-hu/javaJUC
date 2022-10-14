@@ -7,7 +7,7 @@ public class ThreadInterrupt {
             public void run(){
                 System.out.println("enter sleep......");
                 try {
-                    Thread.sleep(2000);
+                    Thread.sleep(20000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -15,7 +15,7 @@ public class ThreadInterrupt {
         };
         thread.start();
 
-        Thread.sleep(1000);
+        Thread.sleep(5000);
         System.out.println("interrupt......");
         thread.interrupt();
     }
